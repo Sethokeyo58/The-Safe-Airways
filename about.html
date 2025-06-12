@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The-Safe-Airways</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(/images/Background.PNG);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            border-image-width: 100%;
+        }
+
+
+        #menu-toggle {
+            display: none;
+        }
+
+        #menu-toggle:checked+label+div#menu-links {
+            display: flex;
+        }
+
+        .nav-link-active {
+            border-bottom-width: 2px;
+            border-bottom-color: #43bb57;
+            color: hwb(0 85% 13%);
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="shadow-md sticky top-0 w-full z-20">
+        <div class="container mx-auto px-6 flex justify-between items-center flex-wrap">
+            <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="/images/The Safe Airways logo.png" class="h-14 w-auto" alt="Safe logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap white-600">The Safe Airways</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="peer">
+
+            <label for="menu-toggle" class="md:hidden cursor-pointer p-2 rounded-md hover:bg-green-100">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+            <div id="menu-links" class="hidden w-full bg-blue shadow-md py-2 flex-col
+                        md:static md:flex md:w-auto md:shadow-none md:bg-transparent md:py-0 
+                        md:flex-row md:items-center md:space-x-4">
+                <a href="index.html"
+                    class="block w-full text-center md:w-auto text-black-800 hover:text-green-700 px-3 py-3 md:py-2 rounded-md text-sm font-large nav-link nav-link-active">Home</a>
+                <a href="services.html"
+                    class="block w-full text-center md:w-auto text-black-800 hover:text-green-700 px-3 py-3 md:py-2 rounded-md text-sm font-large nav-link nav-link-active">Services</a>
+                <a href="about.html"
+                    class="block w-full text-center md:w-auto text-black-800 hover:text-green-700 px-3 py-3 md:py-2 rounded-md text-sm font-large nav-link nav-link-active">About
+                    Us</a>
+                <a href="contact.html"
+                    class="block w-full text-center md:w-auto text-black-800 hover:text-green-700 px-3 py-3 md:py-2 rounded-md text-sm font-large nav-link nav-link-active">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="bg-white rounded-lg shadow-sm ">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="images/The Safe Airways logo.png" class="h-8" alt="JvisTech Logo" />
+                    <span
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The-Safe-Airways</span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+
+                    <li>
+                        <a href="services.html" class="hover:underline me-4 md:me-6">Services</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="hover:underline me-4 md:me-6">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-gray-300"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+                <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-gray-300"><svg class="h-6 w-6"
+                        fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M21.751 8.194c-.788.35-1.63.585-2.513.69a4.382 4.382 0 001.923-2.42c-.827.49-1.745.85-2.724 1.04A4.373 4.373 0 0016.15 6c-2.417 0-4.376 1.96-4.376 4.376 0 .343.038.678.112.999A12.41 12.41 0 013.65 6.908a4.377 4.377 0 001.352 5.843c-.72-.022-1.4-.22-2-.55v.054c0 2.11 1.502 3.87 3.494 4.27a4.37 4.37 0 01-1.992.076c.555 1.73 2.164 2.99 4.07 3.025a8.787 8.787 0 01-5.43 1.87c-.353 0-.7-.02-1.043-.06A12.356 12.356 0 008.52 21c7.302 0 11.29-6.05 11.29-11.29l-.008-.515A8.073 8.073 0 0022 8.617a7.907 7.907 0 01-2.249.617z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="index.html"
+                    class="hover:underline">JvisTech™</a>. All Rights Reserved.</span>
+
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
