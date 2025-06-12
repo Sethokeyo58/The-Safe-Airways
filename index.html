@@ -46,6 +46,45 @@
             color: hsl(0, 7%, 86%);
             background-color: black;
         }
+
+        h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+td:nth-child(6) {
+    font-weight: bold;
+}
+
+td:nth-child(6):contains("Delayed") {
+    color: orange;
+}
+
+td:nth-child(6):contains("Cancelled") {
+    color: red;
+}
+
+td:nth-child(6):contains("On Time") {
+    color: green;
+}
+
+
     </style>
 
 </head>
@@ -82,11 +121,67 @@
         </div>
     </nav>
 
-    <h1 class="text-white text-center "> Welcome To The Safe Airways</h1></Strong>
+    <h1 class="text-white text-center text-2xl"> Welcome To The Safe Airways</h1></Strong>
     <h2 class="text-white text-center block  ">Your Travel Parter Ensuring Your; Safety, Comfort, and offers Value For
         Your Money</h2>,<br><br>
         
         <p class="text-white">Book a flight with us today and enjoy the experience us. Check our travel timetable</p>
+            <h2 class="text-2xl text-center text-white">Flight Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Flight Number</th>
+                <th>Departure</th>
+                <th>Destination</th>
+                <th>Time</th>
+                <th><button>Book</button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>AX123</td>
+                <td>New York</td>
+                <td>London </td>
+                <td>08:30 AM</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>BY456</td>
+                <td>Tokyo (HND)</td>
+                <td>Dubai (DXB)</td>
+                <td>10:15 AM</td>
+                <td>Delayed</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>CZ789</td>
+                <td>Paris (CDG)</td>
+                <td>Berlin (BER)</td>
+                <td>12:45 PM</td>
+                <td>On Time</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>DX321</td>
+                <td>Los Angeles (LAX)</td>
+                <td>Sydney (SYD)</td>
+                <td>03:30 PM</td>
+                <td>Cancelled</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>EZ654</td>
+                <td>Singapore (SIN)</td>
+                <td>Hong Kong (HKG)</td>
+                <td>06:00 PM</td>
+                <td>On Time</td>
+            </tr>
+        </tbody>
+    </table>
+
     <footer class="bg-white rounded-lg shadow-sm ">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
