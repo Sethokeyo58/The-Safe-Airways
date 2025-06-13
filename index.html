@@ -11,11 +11,13 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
+            background-image: url(/images/Background.PNG);
 
-            background-repeat: no-repeat;
+            background-repeat:no-repeat ;
             background-size: 100%;
             font-size: large;
-            background-color: #599663;
+            color: azure;
+            
 
         }
 
@@ -27,8 +29,9 @@
             width: 100%;
             height: 100%;
             background: inherit;
-            filter: blur(20px);
+            filter: blur(60px);
             z-index: -1
+            
         }
 
 
@@ -45,6 +48,8 @@
             border-bottom-color: #43bb57;
             color: hsl(0, 7%, 86%);
             background-color: black;
+            z-index: 1000;
+            color: azure;
         }
 
         h2 {
@@ -58,13 +63,12 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #0e0d0d;
     padding: 10px;
 }
 
 th {
     background-color: #007bff;
-    color: white;
 }
 
 
@@ -83,14 +87,66 @@ td:nth-child(6):contains("Cancelled") {
 td:nth-child(6):contains("On Time") {
     color: green;
 }
+footer {
+    background-color: darkblue;
+}
 
+.submit-btn {
+            background-color: #a30c0c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 20%;
+        }
+  .form-group {
+            margin-bottom: 20px;
+            
+        }
+  .form-group :hover{
+            color: aqua;
+   }     
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        label.required:after {
+            content: " *";
+            color: #e74c3c;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid hsl(0, 0%, 3%);
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .name-fields {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .name-fields .form-group {
+            flex: 1;
+        }       
+        nav {
+            background-color: #43bb57;
+        }
 
     </style>
 
+
 </head>
 
-<body>
-    <nav class="shadow-md sticky top-0 w-full z-20">
+<body class="min-h-screen">
+    <nav class="shadow-md bg-yellow sticky top-0 w-full z-20">
         <div class="container mx-auto px-6 flex justify-between items-center flex-wrap">
             <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="/images/The Safe Airways logo.png" class="h-14 w-auto" alt="Safe logo" />
@@ -121,74 +177,150 @@ td:nth-child(6):contains("On Time") {
         </div>
     </nav>
 
-    <h1 class="text-white text-center text-2xl"> Welcome To The Safe Airways</h1></Strong>
-    <h2 class="text-white text-center block  ">Your Travel Parter Ensuring Your; Safety, Comfort, and offers Value For
+    <h1 class="text-center text-2xl"> Welcome To The Safe Airways</h1></Strong>
+    <h2 class="text-center block  ">Your Travel Parter Ensuring Your; Safety, Comfort, and offers Value For
         Your Money</h2>,<br><br>
         
-        <p class="text-white">Book a flight with us today and enjoy the experience us. Check our travel timetable</p>
-            <h2 class="text-2xl text-center text-white">Flight Schedule</h2>
-    <table>
+        <p class="text-center">We guarantee Quality, Timely and Safe passenger and parcel services</p>
+            <h2 class="text-2xl text-center">Flight Schedule And Price.</h2>
+    <table class="bg-red">
         <thead>
             <tr>
                 <th>Day</th>
-                <th>Flight Number</th>
+                <th>Price</th>
                 <th>Departure</th>
                 <th>Destination</th>
                 <th>Time</th>
-                <th><button>Book</button></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Monday</td>
-                <td>AX123</td>
-                <td>New York</td>
-                <td>London </td>
+                <td>Monday, Tuesday and Sunday</td>
+                <td>Ksh11,000</td>
+                <td>Mombasa</td>
+                <td>Nairobi </td>
                 <td>08:30 AM</td>
-                <td>On Time</td>
             </tr>
             <tr>
-                <td>Tuesday</td>
-                <td>BY456</td>
-                <td>Tokyo (HND)</td>
-                <td>Dubai (DXB)</td>
+                <td>Tuesday and Wednesday</td>
+                <td>ksh7,200</td>
+                <td>Kisumu</td>
+                <td>Nairobi</td>
                 <td>10:15 AM</td>
-                <td>Delayed</td>
             </tr>
             <tr>
-                <td>Wednesday</td>
-                <td>CZ789</td>
-                <td>Paris (CDG)</td>
-                <td>Berlin (BER)</td>
+                <td>Monday, Friday and Saturday</td>
+                <td>Ksh8,900</td>
+                <td>Nairobi</td>
+                <td>Kisumu</td>
                 <td>12:45 PM</td>
-                <td>On Time</td>
+                
             </tr>
             <tr>
-                <td>Thursday</td>
-                <td>DX321</td>
-                <td>Los Angeles (LAX)</td>
-                <td>Sydney (SYD)</td>
+                <td>Thursday,Saturday and Sunday</td>
+                <td>Ksh 15,000</td>
+                <td>Nairobi</td>
+                <td>Eldoret</td>
                 <td>03:30 PM</td>
-                <td>Cancelled</td>
             </tr>
             <tr>
-                <td>Friday</td>
-                <td>EZ654</td>
-                <td>Singapore (SIN)</td>
-                <td>Hong Kong (HKG)</td>
+                <td>Monday, Wednesday and Friday</td>
+                <td>Ksh8,000</td>
+                <td>Eldoret</td>
+                <td>Nairobi</td>
                 <td>06:00 PM</td>
-                <td>On Time</td>
+            </tr>
+            <tr>
+                <td>Monday, Wednesday and Friday</td>
+                <td>ksh9,000</td>
+                <td>Homabay</td>
+                <td>Nairobi</td>
+                <td>06:00 PM</td>
+            </tr>
+            <tr>
+                <td>Monday, Wednesday and Friday</td>
+                <td>Ksh13,000</td>
+                <td>Kakamega</td>
+                <td>Nairobi</td>
+                <td>06:00 PM</td>
             </tr>
         </tbody>
-    </table>
+    </table><br><br>
 
-    <footer class="bg-white rounded-lg shadow-sm ">
+     <div class="card">
+        <form>
+        <h1 class="text-center">Enter Details Your Detail and Book Your Ticket</h1>
+        <!-- Name Section -->
+        <div class="name-fields">
+            <div class="form-group">
+                <label for="firstName" class="required" >First Name </label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Seth">
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName" class="required">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Okeyo">
+            </div>
+        </div>
+        
+        <hr>
+        
+        <!-- Phone Number Section -->
+        <div class="form-group">
+            <label for="phone" class="required">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+254758477179">
+        </div>
+        
+        <br>
+        
+        <!-- Email Section -->
+        <div class="form-group">
+            <label for="email" class="required">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="sethokeyo58@gmail.com">
+        </div>
+        
+        <hr>
+        
+        <!-- Program Selection -->
+        <div class="form-group">
+            <label for="program" class="required">Departure</label>
+            <select id="program" name="program" required>
+                <option value="">-- Select --</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <br>
+        <div class="form-group">
+            <label for="program" class="required">Destination</label>
+            <select id="program" name="program" required>
+                <option value="">-- Select --</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Book</button>
+    </form>
+</div>
+
+    <footer class="bg-grey rounded-lg shadow-sm ">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                     <img src="images/The Safe Airways logo.png" class="h-8" alt="JvisTech Logo" />
                     <span
-                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">The-Safe-Airways</span>
+                        class="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">The-Safe-Airways</span>
                 </a>
                 <ul
                     class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
