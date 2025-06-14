@@ -7,13 +7,14 @@
     <title>The-Safe-Airways</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
             background-image: url(/images/Background.PNG);
 
-            background-repeat:no-repeat ;
+            background-repeat:repeat ;
             background-size: 100%;
             font-size: large;
             color: azure;
@@ -88,7 +89,8 @@ td:nth-child(6):contains("On Time") {
     color: green;
 }
 footer {
-    background-color: darkblue;
+    background-color: grey;
+
 }
 
 .submit-btn {
@@ -134,8 +136,34 @@ footer {
             flex: 1;
         }       
         nav {
-            background-color: #43bb57;
+            background-color: #00b4d8;
         }
+        .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    padding: 8px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    min-height: 250px;
+    box-shadow: 0 4px 6px rgba(o, 0, 0, 0.1);
+}
+
+button {
+    font-weight: bold;
+    background-color: rgb(142, 142, 216);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: green;
+}
 
     </style>
 
@@ -309,7 +337,64 @@ footer {
         <!-- Submit Button -->
         <button type="submit" class="submit-btn">Book</button>
     </form>
-</div>
+</div> <br>
+<h2>Contact Our Agents </h2>
+<p><strong>Note:</strong><em>(The agents are the only persons authorised to assist in booking flights on behalf of The Safe Airways.
+    We will not take responsibility for transactions done through any other persons other than the below mentioned)</em></p>
+
+        <div class="image-grid">
+            <div image-card>
+                <img src="images/Joel Otieno.png" alt="image 1">
+                <div class="Name">Joel Otieno</div>
+                <div class="Location">Nairobi,JKIA</div>
+                <div><button>Contact Now</button></div>
+            </div>
+             <div image-card>
+                <img src="images/Arvid Kay.png" alt="Img">
+                <div class="Name">Arvid Kay</div>
+                <div class="Location">Nairobi, Wilson Airport</div>
+                <div><button>Contact Now</button></div>
+            </div>
+             <div image-card>
+                <img src="images/Jeremie Anayo.png" alt="Jeremie">
+                <div class="Name">Jeremie Anayo</div>
+                <div class="Location">Homabay</div>
+                <div><button>Contact Now</button></div>
+            </div>
+            <div image-card>
+                <img src="images/Lyn Waithaka.png" alt="image 1">
+                <div class="Name">Lyn Waithaka</div>
+                <div class="Price">Kakamega</div>
+                <div><button>Contact Now</button></div>
+                </div>
+
+            <div image-card>
+                <img src="images/Ariel Zainab.png" alt="image 1">
+                <div class="Name">Ariel Zainab</div>
+                <div class="Location">Eldoret</div>
+                <div><button>Contact Now</button></div>
+            </div>
+
+            <div image-card>
+                <img src="images/Jane Aketch.png" alt="image 1">
+                <div class="Name">Jane Aketch</div>
+                <div class="Location">Kisumu</div>
+                <div><button>Contact Now</button></div>
+            </div>
+
+            <div image-card>
+                <img src="images/Rashkar Maknir.png" alt="image 1">
+                <div class="Name">Rashkar Maknir</div>
+                <div class="Location">Mombasa</div>
+                <div><button>Contact Now</button></div>
+            </div>
+
+
+
+
+
+        </div>
+
 
     <footer class="bg-grey rounded-lg shadow-sm ">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
