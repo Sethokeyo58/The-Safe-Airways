@@ -1,6 +1,6 @@
  body {
             font-family: 'Times New Roman', Times, serif;
-            background-image: url(/images/Background.PNG); 
+            /* background-image: url(/images/Background.PNG);  */
             background-repeat:no-repeat ;
             background-size: 100%;
             font-size: large;
@@ -93,11 +93,7 @@ td:nth-child(6):contains("On Time") {
 .submit-btn:hover{
     background-color: #00b4d8;
 } 
-
-  .form-group {
-            margin-bottom: 40px;
-            
-        }    
+   
         label {
             display: block;
             font-weight: bold;
