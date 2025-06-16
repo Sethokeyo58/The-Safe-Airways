@@ -1,13 +1,13 @@
  body {
             font-family: 'Times New Roman', Times, serif;
-             /* background-image: url(/images/Background.PNG);  */
-
+            background-image: url(/images/Background.PNG); 
             background-repeat:no-repeat ;
             background-size: 100%;
             font-size: large;
             color: black;
             background-size: cover;
             background-position: center;
+            
              }
         
 
@@ -141,6 +141,9 @@ td:nth-child(6):contains("On Time") {
 
 
 }
+select{
+    color: #007bff;
+}
 
 .image-grid img {
     width: 100%;
@@ -171,11 +174,22 @@ td:nth-child(6):contains("On Time") {
 footer {
     width: 100%;
     text-align: center;
-    position: relative;
+    position:inherit;
     bottom: 0;
     background-color: #00b4d8;
     color: white;
     padding: 10px;
+}
+@media (min-width: 640px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
